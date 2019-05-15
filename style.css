@@ -1,0 +1,133 @@
+html, body{
+    font-family: 'Lato', serif;
+    font-size: 15px;
+    margin: 0;
+    min-height: 200px;
+    max-height: 585px;
+    padding: 0;
+    width: 348px;
+    overflow: hidden;
+}
+.modal-header{
+    font-family: 'Lato', serif;
+    width: 348px;
+    transition: opacity 0.2s;
+    color: #323439;
+    box-sizing: border-box;
+}
+.logo{
+    height: auto;
+    padding: 20px 0 20px 10px;
+    line-height: 19px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.logo-icon {
+    vertical-align: middle;
+    margin-right: 12px;
+}
+h1{
+    font-family: 'Lato', monospace;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+}
+sup, #count, #clear, #error{
+    font-size: 10px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 2px;
+    padding-left: 3px;
+}
+#error{
+    color: #ed3330;
+}
+a:link, a:visited{
+    color: #000;
+    outline: 0;
+    /* text-decoration: none; */
+}
+img{
+    width: 30px;
+}
+
+.modal-content{
+    font-size: 15px;
+    color: #323439;
+    line-height: 24px;
+    font-weight: 300;
+    position: relative;
+    /* padding-bottom: 20px; */
+    margin-top: 10px;
+    padding-left: 23px;
+    padding-top: 3px;
+}
+.brdr-btm{
+    border-top: 1px solid rgba(0,0,0,0.06);
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 55px);
+}
+.btn{
+    color: #fff !important;
+    text-transform: uppercase;
+    background: #ed3330;
+    padding: 10px;
+    border-radius: 0px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+.btn-control{
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-top: 2px;
+    position: absolute;
+    bottom: 15px;
+    right: 33px;
+    width: 60px;
+}
+.btn:hover{
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+}
+.btn:visited, .btn:focus{
+    outline: none;
+}
+.or{
+    text-align: center;
+}
+label{
+    display: block;
+}
+input[type=text] {
+    padding:10px; 
+    border:1px solid #CCC;
+    border-radius: 0;
+    width: calc(100% - 55px);
+}
+
+input[type=text]:focus {
+    border: none;
+    border-bottom:1px solid #333;
+    outline: none;
+}
+.modal-list{
+    overflow-x: auto;
+    overflow-y: auto;
+    max-width: calc(100% - 55px);
+    max-height: 150px;
+    /* border: 1px solid lime; */
+    padding-left: 19px;
+    margin: 0;
+}
+.modal-list li{
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+#child::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+

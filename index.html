@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OpenUR</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="modal-header">
+        <div class="logo">
+            <h1>
+                <img src="img/logo.svg" alt="opener logo" class="logo-icon">
+                OpenUR<sup>spelled Opener!</sup>
+            </h1>
+        </div>
+        <div class="modal-content">
+            <label>Open your favorite websites?<br>click OPEN</label>
+            <button class="btn btn-control" id="openURL">Open</button>
+            <div class="brdr-btm"></div>
+        </div>
+        <div class="modal-content">
+            <form>
+                <label>Enter your webpage address here</label>
+                <input id="url" type="text" placeholder="Type and hit enter!" required>
+            </form>
+            <p class="or">or</p>
+            <label>Hit ADD to see current <br>website in favorite list</label>
+            <button class="btn btn-control" id="addURL">Add</button>
+            <div class="brdr-btm"></div>
+        </div>
+        <div class="modal-content">
+            <span id="count"></span>
+            <ol class="modal-list" id="child"></ol>
+        </div>
+        <div class="modal-content">
+            <a href="#" id="clear">clear favorites?</a>
+        </div>
+        <div class="modal-content">
+            <p id="error"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
