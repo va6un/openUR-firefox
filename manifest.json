@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "openUR",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Add and launch favorite websites in one click!",
     "icons": {
         "48": "img/48x48.png",
