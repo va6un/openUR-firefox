@@ -1,0 +1,125 @@
+html,
+body {
+  font-size: 15px;
+  font-family: "Lato", serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  min-height: 200px;
+  max-height: 585px;
+  width: 380px;
+  overflow: hidden;
+  color: #323439;
+  box-sizing: border-box;
+}
+
+#popup-content {
+  padding: 1rem;
+}
+.hidden {
+  display: none;
+}
+
+.header,
+.save,
+.input_save,
+.save_all,
+.open,
+.clear {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr 1fr);
+  margin-bottom: 1rem;
+}
+.input_save{
+  grid-template-columns: 1fr;
+}
+.header {
+  grid-template-columns: repeat(2, 1fr);
+}
+.header sup {
+  color: #365847;
+  font-size: 0.65rem;
+  vertical-align: top;
+  line-height: 15px;
+  font-style: italic;
+}
+.logo {
+  width: 75px;
+}
+.saved_links {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 1rem;
+}
+.saved_links ol {
+  min-height: 0px;
+  max-height: 100px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0.5rem 0;
+  padding: 0 0 0 1.5rem;
+}
+.count_container{
+  text-align: end;
+}
+.count{
+  color: #365847;
+}
+.btn {
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: #53af80;
+  text-align: center;
+  place-self: end;
+  cursor: pointer;
+  border-color: #53af80;
+  display: inline-block;
+  font-weight: 400;
+  vertical-align: middle;
+  /* border: 1px solid transparent; */
+  padding: 0.175rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  line-height: 1.5;
+}
+.btn:hover {
+  background-color: rgba(83, 175, 127, 0.75);
+  border-color: rgba(83, 175, 127, 0.75);
+}
+.divider_txt, #message_modal{
+  font-style: italic;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #53af80;
+  margin: 0 0 0.5rem 0;
+}
+.heading,
+.sub_headings {
+  margin: 0;
+  font-weight: 300;
+}
+.heading {
+  place-self: end;
+  align-self: center;
+  font-size: 1.5rem;
+}
+.links {
+  margin-left: 0.5rem;
+  color: #53af80;
+}
+#input_txt {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+#input_txt:focus {
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+}
+#message_modal{
+  visibility: hidden;
+}

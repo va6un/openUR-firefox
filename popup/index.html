@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="popup-content">
+      <header class="header">
+        <img class="logo" src="../icons/logo.png" alt="logo" />
+        <h1 class="heading">openUR<sup>spelled opener!</sup></h1>
+      </header>
+
+      <p id="message_modal">.</p>
+
+      <section class="save">
+        <h3 class="sub_headings">Save the current page's link</h3>
+        <button id="save" class="btn" type="button">Save</button>
+      </section>
+
+      <p class="divider_txt">-- or if you wish to save a link manually; enter it below --</p>
+
+      <form id="input_save" class="input_save">
+        <!-- <h3 class="sub_headings">Enter a link</h3> -->
+        <input type="text" id="input_txt" placeholder="Type and hit 'Enter'" required />
+      </form>
+
+      <section class="save_all">
+        <h3 class="sub_headings">Save all open webpage's link</h3>
+        <button class="btn" id="save_all" type="button">Save All</button>
+      </section>
+
+      <section class="saved_links">
+        <h3 class="sub_headings">Saved links</h3>
+        <ol id="links_olist">
+        </ol>
+        <small class="count_container"><span id="count" class="count">0</span> links saved!</small>
+      </section>
+
+      <section class="open">
+        <h3 class="sub_headings">Open all links in new tabs</h3>
+        <button class="btn" type="button" id="open_all">Open All</button>
+      </section>
+
+      <section class="clear">
+        <h3 class="sub_headings">Clear all saved links</h3>
+        <button class="btn" id="clear_all" type="button">Clear All</button>
+      </section>
+    </div>
+
+    <div id="error-content" class="hidden">
+      <p id="error_message"></p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
